@@ -1,15 +1,13 @@
 import React, { Component } from 'react'
 import { dataGlass } from '../../data/DataGlass';
-import ChooseGlassBox from './ChooseGlassBox';
 
 export default class ListGlassBox extends Component {
 
   renderListGlassItem(){
-    let data = this.props.dataGlass;
     let {changeGlassInfor} = this.props;
     return dataGlass.map(glass=>{
-        let {desc,name,id,url} = glass;
-        return <div className='itemGlass col-2' key={id}>
+        let {id,url} = glass;
+        return <div className='itemGlass col-sm-6 col-md-4 col-lg-2 ' key={id}>
         <div className="content border border-1 my-2">
             <img src={url} alt="..." onClick={()=>{
                 changeGlassInfor(glass);

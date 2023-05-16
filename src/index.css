@@ -15,6 +15,7 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: none;
+  /* padding: 0 !important; */
 }
 
 .itemGlass img{
